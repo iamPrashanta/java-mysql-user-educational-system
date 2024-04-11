@@ -1,5 +1,7 @@
 # Educational System
 
+[VIDEO LINK](https://www.linkedin.com/feed/update/urn:li:activity:7171361410503860224/?originTrackingId=UOyBg%2FEHRxaVV5LpUO%2BN7w%3D%3D)
+
 This is a Java MySQL JavaScript-based educational system where users can login, sign up, register for courses, search for courses by name, and start learning. The system also includes an admin interface for viewing all user data, modifying content, and adding courses to user profiles.
 
 ## Features
