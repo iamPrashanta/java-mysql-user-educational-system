@@ -1,0 +1,17 @@
+The difference between `<%@ include page="./checkConnection.jsp" %>` and `<%@ include file="./checkConnection.jsp" %>` lies in how the path to the included file is resolved.
+
+1. `<%@ include page="./checkConnection.jsp" %>`:
+   - The `page` attribute in the `include` directive tag expects a context-relative path.
+   - The path specified in `page` is relative to the current JSP page's URL.
+   - It takes into account the context path and any URL mappings that may be present.
+   - For example, if the current JSP file's URL is `http://example.com/mypage.jsp`, the included file's path `./checkConnection.jsp` would be resolved to `http://example.com/checkConnection.jsp`.
+
+2. `<%@ include file="./checkConnection.jsp" %>`:
+   - The `file` attribute in the `include` directive tag expects a filesystem-relative or absolute path.
+   - The path specified in `file` is relative to the file system structure of the web application.
+   - It does not consider the current JSP page's URL or any URL mappings.
+   - For example, if the web application is deployed at `/path/to/webapp`, and the included file's path is `./checkConnection.jsp`, it would be resolved to `/path/to/webapp/checkConnection.jsp`.
+
+In summary, the key difference is that the `page` attribute resolves the path based on the current JSP page's URL, while the `file` attribute resolves the path based on the file system structure of the web application.
+
+It's important to choose the appropriate attribute based on your specific requirements and the intended behavior of the inclusion.

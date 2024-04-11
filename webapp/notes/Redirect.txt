@@ -1,0 +1,7 @@
+ if (name == null && adminid == null) {
+    // User is not logged in, redirect to the login page
+    response.sendRedirect("../../admin.jsp");
+}
+
+// Redirect to the login page with an absolute URL
+response.sendRedirect(request.getContextPath() + "/admin.jsp");

@@ -1,0 +1,40 @@
+In JSP (JavaServer Pages), there are three main types of tags: scriptlet tags, directive tags, and expression tags. Additionally, there are several other specialized tags used for specific purposes. Here are the different types of tags in JSP:
+
+1. Scriptlet Tags: `<% ... %>`
+   - Used to include Java code directly within the JSP file.
+   - Example: `<% int count = 5; %>`
+   - Scriptlet tags allow you to write arbitrary Java code, but it is generally recommended to minimize the use of scriptlets and separate business logic from presentation using other approaches.
+
+2. Directive Tags: `<%@ ... %>`
+   - Used to provide directives or instructions to the JSP container (servlet engine) about various aspects of the JSP page.
+   - Commonly used directive tags include:
+     - `<%@ page ... %>`: Specifies page-specific attributes such as language, content type, imports, session behavior, etc.
+     - `<%@ include ... %>`: Includes the contents of another file at the current location.
+     - `<%@ taglib ... %>`: Declares and imports a custom tag library to be used in the JSP.
+
+3. Expression Tags: `<%= ... %>`
+   - Used to output the value of an expression directly into the HTML response.
+   - Example: `<p>Welcome, <%= username %></p>`
+   - Expression tags are a shorthand for printing the value using `out.print()`.
+
+4. Declaration Tags: `<%! ... %>`
+   - Used to declare fields or methods that are accessible throughout the JSP page.
+   - Declarations are placed outside the service method but within the generated servlet class.
+   - Example: `<%! int count = 5; %>`
+
+5. XML Tags: `<jsp: ... >`
+   - Used to define custom actions and control flow within the JSP file.
+   - XML tags are prefixed with `jsp:` and provide additional functionality beyond the basic JSP tags.
+   - Example: `<jsp:include page="header.jsp" />`
+
+6. Standard Action Tags: `<jsp: ... >`
+   - Used to perform specific actions or operations within the JSP file.
+   - Standard action tags provide functionality like including other files, forwarding requests, handling exceptions, and more.
+   - Example: `<jsp:include page="header.jsp" />`
+
+7. Custom Action Tags:
+   - These tags are defined by developers or third-party libraries to encapsulate reusable functionality.
+   - Custom tags provide a way to extend the functionality of JSP by defining and using custom actions.
+   - Example: `<myapp:customTag attribute1="value1" attribute2="value2" />`
+
+It's important to note that the use of scriptlet tags (`<% ... %>`) is generally discouraged in favor of more structured approaches like servlets, JSTL (JSP Standard Tag Library), or custom tags to separate business logic from presentation.

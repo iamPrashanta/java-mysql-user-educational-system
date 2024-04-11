@@ -1,0 +1,180 @@
+#form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-content #form-field #form{
+    width : 48%;
+}
+
+#page-content #form-field #form-image{
+    width : 48%;
+}
+
+#page-content #form-field #form-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.table-container {
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #4C4C4C;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+td:nth-child(7) {
+    text-align: center;
+}
+
+td:nth-child(8) {
+    text-align: center;
+}
+
+td:nth-child(9) {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th, td {
+    /* border-bottom: 1px solid #333; */
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-textarea {
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #F6A425;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d88b17;
+}
+
+
+
+.button-muted-coral {
+    background-color: #C7373F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button-muted-coral:hover {
+    background-color: #b8232b;
+}
+
+.button-deep-coral {
+    background-color: #C7373F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button-deep-coral:hover {
+    background-color: #b8232b;
+}
+
+
+.add-button {
+    background-color: #F6A425;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.update-button {
+    background-color: #F6A425;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-content #form-field #form {
+        width : 100%;
+    }
+
+    #page-content #form-field #form-image {
+        display: none;
+    }
+}
